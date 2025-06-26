@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import HomeAntivirus from "~/Components/home/homeantivirus";
+import HomeAntivirus from "~/Components/home/HomeAntivirus";
 
 
 export const meta: MetaFunction = () => {
@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <div>
       <div>
-        <HomeAntivirus />
+        <HomeAntivirus/>
       </div>
     </div>
   );
