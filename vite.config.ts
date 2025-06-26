@@ -22,4 +22,20 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
-});
+  build: {
+    lib: {
+      entry: 'src/index.ts',
+      name: 'MyLib',
+      fileName: 'my-lib',
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
+    },
+  },
+})
