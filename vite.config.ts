@@ -1,6 +1,7 @@
 import { vitePlugin as remix } from "@remix-run/dev";
 import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
+import path from 'path';
 
 
 declare module "@remix-run/node" {
@@ -22,14 +23,14 @@ export default defineConfig({
     }),
     tsconfigPaths(),
   ],
-  build: {
-    lib: {
-      entry: 'src/index.ts',
-      name: 'MyLib',
-      fileName: 'my-lib',
+  resolve: {
+
+    alias: {
+
+      '~': path.resolve(__dirname, 'app'), // o el path correcto a tu carpeta raíz
+
     },
-    rollupOptions: {
-      
-    },
+
   },
+
 })
