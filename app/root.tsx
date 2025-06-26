@@ -12,8 +12,8 @@ import { Toaster } from "react-hot-toast";
 import "./tailwind.css";
 import { checkAuth } from "~/services/authService";
 import Navbar from "~/Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
-import WompiButton from "./Components/wompi";
+import Footer from "~/Components/Footer/Footer";
+import WompiButton from "~/Components/wompi";
 
 
 export const loader = async ({ request }: { request: Request }) => {
