@@ -3,7 +3,7 @@ import Opportunity from "./opportunity"
 import DollHome from "./dollhome";
 import Benefits from "~/Components/Benefits";
 
-export default function HomeAntivirus() {
+export default function homeantivirus() {
   return (
     <div>
       <div>
